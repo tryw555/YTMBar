@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E6AD88725D09622BC4D1E3C /* ArtworkFileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31662513120E85D7516780EE /* ArtworkFileWriter.swift */; };
+		16EEDFBC354BEB3B886ABC12 /* YTMBarShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9019A676662EC75829CC56C /* YTMBarShared.framework */; };
+		18E2FC62CC68CC29EA53CBE4 /* PlaybackCommanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D632E023A9A808CAD1FA5C5 /* PlaybackCommanding.swift */; };
+		3B5E17C9D5A72DF7D05AF56F /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501D0EC3267846CB5E83EE97 /* AppSettings.swift */; };
+		3C0E9496441778DFAAB11B99 /* YouTubeMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB01C5F49D28770F95F50844 /* YouTubeMusicViewController.swift */; };
+		3C152A91FBF79D5B4EBD67D4 /* ArtworkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5762A6FE178589804615BE11 /* ArtworkLoader.swift */; };
+		3D1101B9E25AE5D38131D73F /* StatusBarPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328A9D114D9CCB1E3CBBF79A /* StatusBarPlayerView.swift */; };
+		425D6B867CDA4B361E189025 /* YTMBarShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9019A676662EC75829CC56C /* YTMBarShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F0F8DA211296EC2A81E3D9C /* CDArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F277E4A426052B3433C84366 /* CDArtworkView.swift */; };
+		518F07118A3A7CA0DA71452B /* YTMBarWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0C8D2216B0DC9AC304D51BDB /* YTMBarWidgetExtension.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		657A6AE4F4E4F057C8C53A94 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A285E2712BC77482CDB407EA /* StatusBarController.swift */; };
+		6C2DCF5A0F65FAF4E52BB6B2 /* PlayerPanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA04999C786F9483085BFE4 /* PlayerPanelController.swift */; };
+		7A28D4EF81A67835F4004AEA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EE371C6B64AE3529534C6E /* main.swift */; };
+		938B3D500981FA2449225F79 /* HoverPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB1B8CFE1228ED7B0704153 /* HoverPreviewController.swift */; };
+		9CF2824B15096A553CCD3602 /* YTMBarShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9019A676662EC75829CC56C /* YTMBarShared.framework */; };
+		9EB9FABC368DCF296D5A3BCA /* MarqueeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827F0218B917F1ADE31F284E /* MarqueeLabel.swift */; };
+		A7815E7AEF5BC3418DD79E52 /* YTMBarShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9019A676662EC75829CC56C /* YTMBarShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B065328AC92EE929458615FC /* NowPlayingSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4F508739F46842C1A6B895 /* NowPlayingSnapshot.swift */; };
+		B85589BE4CBCC8EA0A8BC65F /* NowPlayingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214C9AD7AEF7143DBCE6A3E /* NowPlayingController.swift */; };
+		BED1ECE3782DE6E0EFB84A60 /* PlaybackState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282DFAB6B45933B133899A13 /* PlaybackState.swift */; };
+		C20CAAC2F49629859CE58930 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D722528B868D216184EB8A68 /* AppDelegate.swift */; };
+		DD970ACAD19A0CC0374991C2 /* IconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8234BFA18351775DFB51A92B /* IconButton.swift */; };
+		E2FA36F7C1E6E2563C9F3CE7 /* YTMBarNowPlayingWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63EA9B1AA8C065693E3C1C0 /* YTMBarNowPlayingWidget.swift */; };
+		ED29D410B6BDBFE9118DB602 /* YTMBarWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E545B4D2D2362AEB6BA160DF /* YTMBarWidgetBundle.swift */; };
+		F7E9DB689A4B85BCB20A31AD /* DiagnosticsLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8096422BE3A015A8AF424641 /* DiagnosticsLogger.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B1904BB2FF0A83466CD27B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F84FFB6B6887642713DADDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBCF9DC82EFE1198FF2F3876;
+			remoteInfo = YTMBarShared;
+		};
+		D25FF50112F3C635414BD997 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F84FFB6B6887642713DADDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBCF9DC82EFE1198FF2F3876;
+			remoteInfo = YTMBarShared;
+		};
+		D28A41E2E993949B2D83BAD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F84FFB6B6887642713DADDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B16DD14594E691AEA7A83B7;
+			remoteInfo = YTMBarWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52D7054A48BCA53732117599 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				425D6B867CDA4B361E189025 /* YTMBarShared.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3DC0B55C9F3F68DCF2F5616 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				518F07118A3A7CA0DA71452B /* YTMBarWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7BBE0CBC78D052FC633D417 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A7815E7AEF5BC3418DD79E52 /* YTMBarShared.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0AA04999C786F9483085BFE4 /* PlayerPanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPanelController.swift; sourceTree = "<group>"; };
+		0C8D2216B0DC9AC304D51BDB /* YTMBarWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = YTMBarWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		117C2F4B558CEC530906ABC2 /* YTMBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTMBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2214C9AD7AEF7143DBCE6A3E /* NowPlayingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingController.swift; sourceTree = "<group>"; };
+		26EE371C6B64AE3529534C6E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		282DFAB6B45933B133899A13 /* PlaybackState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackState.swift; sourceTree = "<group>"; };
+		31662513120E85D7516780EE /* ArtworkFileWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkFileWriter.swift; sourceTree = "<group>"; };
+		328A9D114D9CCB1E3CBBF79A /* StatusBarPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarPlayerView.swift; sourceTree = "<group>"; };
+		501D0EC3267846CB5E83EE97 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		5762A6FE178589804615BE11 /* ArtworkLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkLoader.swift; sourceTree = "<group>"; };
+		8096422BE3A015A8AF424641 /* DiagnosticsLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticsLogger.swift; sourceTree = "<group>"; };
+		8234BFA18351775DFB51A92B /* IconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconButton.swift; sourceTree = "<group>"; };
+		827F0218B917F1ADE31F284E /* MarqueeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarqueeLabel.swift; sourceTree = "<group>"; };
+		8D632E023A9A808CAD1FA5C5 /* PlaybackCommanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackCommanding.swift; sourceTree = "<group>"; };
+		A285E2712BC77482CDB407EA /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		A9019A676662EC75829CC56C /* YTMBarShared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YTMBarShared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF65521BEE78C6E8EBC6723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BB01C5F49D28770F95F50844 /* YouTubeMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeMusicViewController.swift; sourceTree = "<group>"; };
+		BC4F508739F46842C1A6B895 /* NowPlayingSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingSnapshot.swift; sourceTree = "<group>"; };
+		CAB1B8CFE1228ED7B0704153 /* HoverPreviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverPreviewController.swift; sourceTree = "<group>"; };
+		D722528B868D216184EB8A68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E545B4D2D2362AEB6BA160DF /* YTMBarWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTMBarWidgetBundle.swift; sourceTree = "<group>"; };
+		F277E4A426052B3433C84366 /* CDArtworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDArtworkView.swift; sourceTree = "<group>"; };
+		F63EA9B1AA8C065693E3C1C0 /* YTMBarNowPlayingWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTMBarNowPlayingWidget.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		56E13B4A6E05BA4E8527C98A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16EEDFBC354BEB3B886ABC12 /* YTMBarShared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62EF93A95F5932D38A161293 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CF2824B15096A553CCD3602 /* YTMBarShared.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06B6C0E7B5DFEC5034D44AD5 /* Hover */ = {
+			isa = PBXGroup;
+			children = (
+				CAB1B8CFE1228ED7B0704153 /* HoverPreviewController.swift */,
+			);
+			path = Hover;
+			sourceTree = "<group>";
+		};
+		072F76ADD9E9D3222F3237F4 /* YTMBarShared */ = {
+			isa = PBXGroup;
+			children = (
+				BC4F508739F46842C1A6B895 /* NowPlayingSnapshot.swift */,
+			);
+			name = YTMBarShared;
+			path = Sources/YTMBarShared;
+			sourceTree = "<group>";
+		};
+		2D6AF562346126693D83AB56 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				BB01C5F49D28770F95F50844 /* YouTubeMusicViewController.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		3B2592FFBA3E52B99496A1E1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D722528B868D216184EB8A68 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3B4CD88ABF56FD2024CE0C3D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				31662513120E85D7516780EE /* ArtworkFileWriter.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		47147D0066324F15D745EE07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D632E023A9A808CAD1FA5C5 /* PlaybackCommanding.swift */,
+				282DFAB6B45933B133899A13 /* PlaybackState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4BD8DC584B646AC6BEA22950 /* StatusBar */ = {
+			isa = PBXGroup;
+			children = (
+				5762A6FE178589804615BE11 /* ArtworkLoader.swift */,
+				F277E4A426052B3433C84366 /* CDArtworkView.swift */,
+				8234BFA18351775DFB51A92B /* IconButton.swift */,
+				827F0218B917F1ADE31F284E /* MarqueeLabel.swift */,
+				A285E2712BC77482CDB407EA /* StatusBarController.swift */,
+				328A9D114D9CCB1E3CBBF79A /* StatusBarPlayerView.swift */,
+			);
+			path = StatusBar;
+			sourceTree = "<group>";
+		};
+		59164B5725458C472786BCEB = {
+			isa = PBXGroup;
+			children = (
+				E9A29E7372131148907F18A6 /* YTMBar */,
+				072F76ADD9E9D3222F3237F4 /* YTMBarShared */,
+				6C456D34F46AAC5131A37020 /* YTMBarWidget */,
+				DCCA6E1F2112A47ABDA53E71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C456D34F46AAC5131A37020 /* YTMBarWidget */ = {
+			isa = PBXGroup;
+			children = (
+				ADF65521BEE78C6E8EBC6723 /* Info.plist */,
+				F63EA9B1AA8C065693E3C1C0 /* YTMBarNowPlayingWidget.swift */,
+				E545B4D2D2362AEB6BA160DF /* YTMBarWidgetBundle.swift */,
+			);
+			name = YTMBarWidget;
+			path = Widgets/YTMBarWidget;
+			sourceTree = "<group>";
+		};
+		979398DFF86B61CCFF29F257 /* Diagnostics */ = {
+			isa = PBXGroup;
+			children = (
+				8096422BE3A015A8AF424641 /* DiagnosticsLogger.swift */,
+			);
+			path = Diagnostics;
+			sourceTree = "<group>";
+		};
+		9CDD2B730C45E4AD49743186 /* Panel */ = {
+			isa = PBXGroup;
+			children = (
+				0AA04999C786F9483085BFE4 /* PlayerPanelController.swift */,
+			);
+			path = Panel;
+			sourceTree = "<group>";
+		};
+		CF0E672E98F2B729C949A636 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				2214C9AD7AEF7143DBCE6A3E /* NowPlayingController.swift */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		DCCA6E1F2112A47ABDA53E71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				117C2F4B558CEC530906ABC2 /* YTMBar.app */,
+				A9019A676662EC75829CC56C /* YTMBarShared.framework */,
+				0C8D2216B0DC9AC304D51BDB /* YTMBarWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E68A48E9B1434990A07E85A3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				501D0EC3267846CB5E83EE97 /* AppSettings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		E9A29E7372131148907F18A6 /* YTMBar */ = {
+			isa = PBXGroup;
+			children = (
+				26EE371C6B64AE3529534C6E /* main.swift */,
+				3B2592FFBA3E52B99496A1E1 /* App */,
+				979398DFF86B61CCFF29F257 /* Diagnostics */,
+				06B6C0E7B5DFEC5034D44AD5 /* Hover */,
+				CF0E672E98F2B729C949A636 /* Media */,
+				47147D0066324F15D745EE07 /* Model */,
+				9CDD2B730C45E4AD49743186 /* Panel */,
+				E68A48E9B1434990A07E85A3 /* Settings */,
+				3B4CD88ABF56FD2024CE0C3D /* Shared */,
+				4BD8DC584B646AC6BEA22950 /* StatusBar */,
+				2D6AF562346126693D83AB56 /* Web */,
+			);
+			name = YTMBar;
+			path = Sources/YTMBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B16DD14594E691AEA7A83B7 /* YTMBarWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFEFCAF504FE026E84469728 /* Build configuration list for PBXNativeTarget "YTMBarWidgetExtension" */;
+			buildPhases = (
+				D56CD23CDD86008C3C562693 /* Sources */,
+				62EF93A95F5932D38A161293 /* Frameworks */,
+				F7BBE0CBC78D052FC633D417 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AB3624D348348D5D9A28FBE /* PBXTargetDependency */,
+			);
+			name = YTMBarWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = YTMBarWidgetExtension;
+			productReference = 0C8D2216B0DC9AC304D51BDB /* YTMBarWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9B48AF52F3A817F02342A507 /* YTMBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4BBD8E71AA3214B47E8BCDC6 /* Build configuration list for PBXNativeTarget "YTMBar" */;
+			buildPhases = (
+				CA64A56EF79C628575542386 /* Sources */,
+				56E13B4A6E05BA4E8527C98A /* Frameworks */,
+				F3DC0B55C9F3F68DCF2F5616 /* Embed Foundation Extensions */,
+				52D7054A48BCA53732117599 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B613DA2B5A72FC36286650E /* PBXTargetDependency */,
+				C123A26A821E6C6FC2577995 /* PBXTargetDependency */,
+			);
+			name = YTMBar;
+			packageProductDependencies = (
+			);
+			productName = YTMBar;
+			productReference = 117C2F4B558CEC530906ABC2 /* YTMBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBCF9DC82EFE1198FF2F3876 /* YTMBarShared */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63AD770771B279FEFBE6A53A /* Build configuration list for PBXNativeTarget "YTMBarShared" */;
+			buildPhases = (
+				CA07EDC0DC30E0625B5F1644 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YTMBarShared;
+			packageProductDependencies = (
+			);
+			productName = YTMBarShared;
+			productReference = A9019A676662EC75829CC56C /* YTMBarShared.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F84FFB6B6887642713DADDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					3B16DD14594E691AEA7A83B7 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					9B48AF52F3A817F02342A507 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					FBCF9DC82EFE1198FF2F3876 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8444D07FF2F5D45C3F070B9B /* Build configuration list for PBXProject "YTMBar" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 59164B5725458C472786BCEB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = DCCA6E1F2112A47ABDA53E71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B48AF52F3A817F02342A507 /* YTMBar */,
+				FBCF9DC82EFE1198FF2F3876 /* YTMBarShared */,
+				3B16DD14594E691AEA7A83B7 /* YTMBarWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA07EDC0DC30E0625B5F1644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B065328AC92EE929458615FC /* NowPlayingSnapshot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA64A56EF79C628575542386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20CAAC2F49629859CE58930 /* AppDelegate.swift in Sources */,
+				3B5E17C9D5A72DF7D05AF56F /* AppSettings.swift in Sources */,
+				0E6AD88725D09622BC4D1E3C /* ArtworkFileWriter.swift in Sources */,
+				3C152A91FBF79D5B4EBD67D4 /* ArtworkLoader.swift in Sources */,
+				4F0F8DA211296EC2A81E3D9C /* CDArtworkView.swift in Sources */,
+				F7E9DB689A4B85BCB20A31AD /* DiagnosticsLogger.swift in Sources */,
+				938B3D500981FA2449225F79 /* HoverPreviewController.swift in Sources */,
+				DD970ACAD19A0CC0374991C2 /* IconButton.swift in Sources */,
+				9EB9FABC368DCF296D5A3BCA /* MarqueeLabel.swift in Sources */,
+				B85589BE4CBCC8EA0A8BC65F /* NowPlayingController.swift in Sources */,
+				18E2FC62CC68CC29EA53CBE4 /* PlaybackCommanding.swift in Sources */,
+				BED1ECE3782DE6E0EFB84A60 /* PlaybackState.swift in Sources */,
+				6C2DCF5A0F65FAF4E52BB6B2 /* PlayerPanelController.swift in Sources */,
+				657A6AE4F4E4F057C8C53A94 /* StatusBarController.swift in Sources */,
+				3D1101B9E25AE5D38131D73F /* StatusBarPlayerView.swift in Sources */,
+				3C0E9496441778DFAAB11B99 /* YouTubeMusicViewController.swift in Sources */,
+				7A28D4EF81A67835F4004AEA /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D56CD23CDD86008C3C562693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2FA36F7C1E6E2563C9F3CE7 /* YTMBarNowPlayingWidget.swift in Sources */,
+				ED29D410B6BDBFE9118DB602 /* YTMBarWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0AB3624D348348D5D9A28FBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBCF9DC82EFE1198FF2F3876 /* YTMBarShared */;
+			targetProxy = 7B1904BB2FF0A83466CD27B8 /* PBXContainerItemProxy */;
+		};
+		8B613DA2B5A72FC36286650E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBCF9DC82EFE1198FF2F3876 /* YTMBarShared */;
+			targetProxy = D25FF50112F3C635414BD997 /* PBXContainerItemProxy */;
+		};
+		C123A26A821E6C6FC2577995 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B16DD14594E691AEA7A83B7 /* YTMBarWidgetExtension */;
+			targetProxy = D28A41E2E993949B2D83BAD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02C3BB51440EFB859EFB237E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = packaging/entitlements/YTMBar.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = packaging/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozwin.ytmbar;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		24D748025191B19F96BB952A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = packaging/entitlements/YTMBarWidget.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Widgets/YTMBarWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozwin.ytmbar.widget;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5369B6D51309331B8864B515 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		820194847AFBFDF057CD34A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozwin.ytmbar.shared;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		92B11FE5A8A4BA9612AFF332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E72C570808A5B301B4A489FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = packaging/entitlements/YTMBarWidget.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Widgets/YTMBarWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozwin.ytmbar.widget;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F594A9296F36F71951B7E21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozwin.ytmbar.shared;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		FAEBE38249D495CFABC9E0C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = packaging/entitlements/YTMBar.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = packaging/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozwin.ytmbar;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4BBD8E71AA3214B47E8BCDC6 /* Build configuration list for PBXNativeTarget "YTMBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C3BB51440EFB859EFB237E /* Debug */,
+				FAEBE38249D495CFABC9E0C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		63AD770771B279FEFBE6A53A /* Build configuration list for PBXNativeTarget "YTMBarShared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				820194847AFBFDF057CD34A6 /* Debug */,
+				F594A9296F36F71951B7E21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8444D07FF2F5D45C3F070B9B /* Build configuration list for PBXProject "YTMBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92B11FE5A8A4BA9612AFF332 /* Debug */,
+				5369B6D51309331B8864B515 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CFEFCAF504FE026E84469728 /* Build configuration list for PBXNativeTarget "YTMBarWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E72C570808A5B301B4A489FB /* Debug */,
+				24D748025191B19F96BB952A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F84FFB6B6887642713DADDE /* Project object */;
+}

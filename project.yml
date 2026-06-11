@@ -1,0 +1,68 @@
+name: YTMBar
+options:
+  bundleIdPrefix: com.ozwin
+  deploymentTarget:
+    macOS: "14.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: ""
+targets:
+  YTMBarShared:
+    type: framework
+    platform: macOS
+    sources:
+      - path: Sources/YTMBarShared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ozwin.ytmbar.shared
+        GENERATE_INFOPLIST_FILE: YES
+        DEFINES_MODULE: YES
+        SKIP_INSTALL: YES
+  YTMBar:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources/YTMBar
+    dependencies:
+      - target: YTMBarShared
+        embed: true
+        codeSign: true
+      - target: YTMBarWidgetExtension
+        embed: true
+        codeSign: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ozwin.ytmbar
+        INFOPLIST_FILE: packaging/Info.plist
+        CODE_SIGN_ENTITLEMENTS: packaging/entitlements/YTMBar.entitlements
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks"
+  YTMBarWidgetExtension:
+    type: app-extension
+    platform: macOS
+    sources:
+      - path: Widgets/YTMBarWidget
+    dependencies:
+      - target: YTMBarShared
+        embed: true
+        codeSign: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.ozwin.ytmbar.widget
+        INFOPLIST_FILE: Widgets/YTMBarWidget/Info.plist
+        CODE_SIGN_ENTITLEMENTS: packaging/entitlements/YTMBarWidget.entitlements
+        APPLICATION_EXTENSION_API_ONLY: YES
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks"
+schemes:
+  YTMBar:
+    build:
+      targets:
+        YTMBar: all
+        YTMBarWidgetExtension: all
+    run:
+      config: Debug
+  YTMBarWidgetExtension:
+    build:
+      targets:
+        YTMBarWidgetExtension: all
