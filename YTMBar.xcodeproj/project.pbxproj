@@ -10,6 +10,7 @@
 		0E6AD88725D09622BC4D1E3C /* ArtworkFileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31662513120E85D7516780EE /* ArtworkFileWriter.swift */; };
 		16EEDFBC354BEB3B886ABC12 /* YTMBarShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9019A676662EC75829CC56C /* YTMBarShared.framework */; };
 		18E2FC62CC68CC29EA53CBE4 /* PlaybackCommanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D632E023A9A808CAD1FA5C5 /* PlaybackCommanding.swift */; };
+		279BF596ADD862964483DCF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C33197B529CE8083D38AFF /* Assets.xcassets */; };
 		3B5E17C9D5A72DF7D05AF56F /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501D0EC3267846CB5E83EE97 /* AppSettings.swift */; };
 		3C0E9496441778DFAAB11B99 /* YouTubeMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB01C5F49D28770F95F50844 /* YouTubeMusicViewController.swift */; };
 		3C152A91FBF79D5B4EBD67D4 /* ArtworkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5762A6FE178589804615BE11 /* ArtworkLoader.swift */; };
@@ -24,6 +25,7 @@
 		9CF2824B15096A553CCD3602 /* YTMBarShared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9019A676662EC75829CC56C /* YTMBarShared.framework */; };
 		9EB9FABC368DCF296D5A3BCA /* MarqueeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827F0218B917F1ADE31F284E /* MarqueeLabel.swift */; };
 		A7815E7AEF5BC3418DD79E52 /* YTMBarShared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A9019A676662EC75829CC56C /* YTMBarShared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ADE3DACC9A9A3193C6F53B44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C33197B529CE8083D38AFF /* Assets.xcassets */; };
 		B065328AC92EE929458615FC /* NowPlayingSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4F508739F46842C1A6B895 /* NowPlayingSnapshot.swift */; };
 		B85589BE4CBCC8EA0A8BC65F /* NowPlayingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2214C9AD7AEF7143DBCE6A3E /* NowPlayingController.swift */; };
 		BED1ECE3782DE6E0EFB84A60 /* PlaybackState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282DFAB6B45933B133899A13 /* PlaybackState.swift */; };
@@ -116,6 +118,7 @@
 		BC4F508739F46842C1A6B895 /* NowPlayingSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingSnapshot.swift; sourceTree = "<group>"; };
 		CAB1B8CFE1228ED7B0704153 /* HoverPreviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoverPreviewController.swift; sourceTree = "<group>"; };
 		D722528B868D216184EB8A68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2C33197B529CE8083D38AFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E545B4D2D2362AEB6BA160DF /* YTMBarWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTMBarWidgetBundle.swift; sourceTree = "<group>"; };
 		F277E4A426052B3433C84366 /* CDArtworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDArtworkView.swift; sourceTree = "<group>"; };
 		F63EA9B1AA8C065693E3C1C0 /* YTMBarNowPlayingWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTMBarNowPlayingWidget.swift; sourceTree = "<group>"; };
@@ -207,6 +210,7 @@
 		59164B5725458C472786BCEB = {
 			isa = PBXGroup;
 			children = (
+				FFD1F274246199A57FEBABCF /* Resources */,
 				E9A29E7372131148907F18A6 /* YTMBar */,
 				072F76ADD9E9D3222F3237F4 /* YTMBarShared */,
 				6C456D34F46AAC5131A37020 /* YTMBarWidget */,
@@ -286,6 +290,14 @@
 			path = Sources/YTMBar;
 			sourceTree = "<group>";
 		};
+		FFD1F274246199A57FEBABCF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2C33197B529CE8083D38AFF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,6 +306,7 @@
 			buildConfigurationList = CFEFCAF504FE026E84469728 /* Build configuration list for PBXNativeTarget "YTMBarWidgetExtension" */;
 			buildPhases = (
 				D56CD23CDD86008C3C562693 /* Sources */,
+				D0B0F6585EA82CC10BD1397D /* Resources */,
 				62EF93A95F5932D38A161293 /* Frameworks */,
 				F7BBE0CBC78D052FC633D417 /* Embed Frameworks */,
 			);
@@ -314,6 +327,7 @@
 			buildConfigurationList = 4BBD8E71AA3214B47E8BCDC6 /* Build configuration list for PBXNativeTarget "YTMBar" */;
 			buildPhases = (
 				CA64A56EF79C628575542386 /* Sources */,
+				298101B745F2665083EA96D5 /* Resources */,
 				56E13B4A6E05BA4E8527C98A /* Frameworks */,
 				F3DC0B55C9F3F68DCF2F5616 /* Embed Foundation Extensions */,
 				52D7054A48BCA53732117599 /* Embed Frameworks */,
@@ -391,6 +405,25 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		298101B745F2665083EA96D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE3DACC9A9A3193C6F53B44 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0B0F6585EA82CC10BD1397D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279BF596ADD862964483DCF5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CA07EDC0DC30E0625B5F1644 /* Sources */ = {
@@ -472,6 +505,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = packaging/entitlements/YTMBarWidget.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Widgets/YTMBarWidget/Info.plist;
@@ -631,6 +665,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = packaging/entitlements/YTMBarWidget.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Widgets/YTMBarWidget/Info.plist;

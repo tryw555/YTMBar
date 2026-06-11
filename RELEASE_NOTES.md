@@ -1,4 +1,22 @@
-# YTMBar 0.1.0
+# YTMBar 0.1.1
+
+앱 아이콘을 추가한 배포 버전입니다.
+
+## 한국어 요약
+
+- macOS 앱 아이콘 추가
+- Xcode 빌드용 `AppIcon` asset catalog 추가
+- SwiftPM 간이 앱 번들용 `YTMBar.icns` 추가
+- 앱과 위젯 버전을 `0.1.1`로 업데이트
+
+## Highlights
+
+- Added a custom macOS app icon
+- Added an `AppIcon` asset catalog for Xcode builds
+- Added `YTMBar.icns` for the SwiftPM app bundle
+- Updated app and widget versions to `0.1.1`
+
+## Previous Release: YTMBar 0.1.0
 
 Initial public build.
 

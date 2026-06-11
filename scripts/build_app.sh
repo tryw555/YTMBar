@@ -18,6 +18,7 @@ mkdir -p "$MACOS_DIR" "$RESOURCES_DIR"
 
 cp "$ROOT_DIR/packaging/Info.plist" "$CONTENTS_DIR/Info.plist"
 cp "$ROOT_DIR/.build/arm64-apple-macosx/$CONFIGURATION/$APP_NAME" "$MACOS_DIR/$APP_NAME"
+cp "$ROOT_DIR/Resources/YTMBar.icns" "$RESOURCES_DIR/YTMBar.icns"
 chmod +x "$MACOS_DIR/$APP_NAME"
 
 if command -v codesign >/dev/null 2>&1; then
